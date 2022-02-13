@@ -1,0 +1,21 @@
+ALGORITHM algorithm_somme
+VAR
+    i: INTEGER=0;
+    counterChar: INTEGER=0;
+    wordsNum: INTEGER=0;
+    vowlsNum: INTEGER=0;
+    phrase: INTEGER;
+BEGIN
+    FOR i FROM 0 TO phrase.length-1 STEP 1  DO
+    counterChar++;
+        IF (phrase[i]==" " OR phrase[i]==".") THEN
+            wordsNum++;
+        END_IF
+        IF (phrase[i]=="a","e","i","o","u","y","A","E","I","O","U","Y") THEN
+            vowelsNum++;
+        END_IF
+    END_FOR
+    write("The number of words is",wordsNum);
+    write("The number of vowels is",vowlssNum);
+    write("The number of characters is",counterChar+1);
+END
